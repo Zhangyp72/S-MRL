@@ -1,0 +1,7 @@
+# S-MRL
+In multimodal representation learning, different modalities contain different amounts of information and show different advantages, leading to modal collapse in cross-modal information integration. In order to solve this problem, we propose a method for multimodal representation
+learning in a spiking neural networks framework(S-MRL). S-MRL transforms the traditional multimodal learning into a process of spike sequence learning by encoding individual spikes of modalities, thereby minimizing the inter-modal interference. In the learning stage, the multimodal
+representation of the imbalanced information of different modes in the shared space leads to a modal that may rely on only one or a few modes to make decisions, reducing the overall performance and generalization ability. We use Gaussian kernel spike distance to construct the shared
+information space between modalities, and then use joint entropy to capture cross-modal information interactions so as to integrate information between different modalities, and construct recursive spiking neural networks to solve modal collapse and forgetting during the learning process.
+In the inference stage, S-MRL utilizes an informative fusion mechanism based on modal data representations to integrate multimodal information, and uses cross-entropy to predict the performance of different modalities after integration. The experimental part of the classification
+accuracy experiments on four different datasets with complete and missing modalities and different network structures.
